@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			python form script
+		</title>
+		<style>
+			div { text-align: center;}
+		</style>
+	</head>
+	<body style="background-color:grey;">
+		<h3 style="text-align:center"> Fill the form by clicking the below button</h3>
+		<div>
+		
+		<button margin-left:auto margin-top:auto style="text-align:center" onclick="location.href='{% url 'script' %}'">Execute form </button>
+		{% if data %}
+		
+		{{data}}
+		
+		{% endif %}
+		</div>
+	</body>
